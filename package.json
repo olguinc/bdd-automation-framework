@@ -1,0 +1,16 @@
+{
+  "name": "bdd-automation-framework",
+  "version": "1.0.0",
+  "description": "Cypress Automation Framework with Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "regression": "npx cypress-tags run --env TAGS=\"@regression and not (@pending or @wip)\"",
+    "report": "node cypress/cucumber-html-report.js"
+  },
+  "author": "Carolina Olguin",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.1.0"
+  }
+}
